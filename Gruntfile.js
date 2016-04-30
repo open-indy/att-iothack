@@ -18,13 +18,6 @@ module.exports = function (grunt) {
           require: mochaCompilers
         },
         src: testingPaths
-      },
-      teamcity: {
-        options: {
-          reporter: 'mocha-teamcity-reporter',
-          require: mochaCompilers
-        },
-        src: testingPaths
       }
     },
     eslint: {
