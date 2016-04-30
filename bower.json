@@ -1,8 +1,8 @@
 {
-  "name": "Intervention 911",
+  "name": "intervention-911",
   "authors": [
     "Jonathon Hibbard",
-    "Stephen Williams"
+    "Scott Williams"
   ],
   "description": "information generated from crimes",
   "version": "1.0.0",
@@ -13,9 +13,7 @@
     "node_modules",
     "bower_components"
   ],
-  "dependencies": {
-    "bootstrap": "^3.3.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "blanket": "~1.1.5",
     "qunit": "~1.17.1"
