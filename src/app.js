@@ -6,11 +6,6 @@ import Header from './components/header.js';
 import Footer from './components/footer.js';
 
 class App extends React.Component {
-  componentDidMount(){
-    const { dispatch } = this.props;
-    dispatch(attemptUserReload());
-  }
-
   render() {
     return (
       <div className="intervention">

@@ -1,3 +1,4 @@
 import { combineReducers } from 'redux';
+import { nav } from './nav';
 
-// export default combineReducers({ something });
+export default combineReducers({ nav });

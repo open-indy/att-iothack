@@ -29,10 +29,9 @@ Main.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-  const { tools } = state.tools;
-  const isFetching = true;
+  const isFetching = false;
 
-  return { tools, isFetching };
+  return { isFetching };
 };
 
 export default connect(mapStateToProps)(Main);
