@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux';
-import { nav } from './nav';
+import { crime } from './crime';
 
-export default combineReducers({ nav });
+export default combineReducers({ crime });

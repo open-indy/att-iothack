@@ -8,12 +8,16 @@ const CreateCampaign = (props) => (
         <input type="text" name="name" id="campaign-name" class="create-campaign" value="" />
       </li>
       <li>
+<<<<<<< Updated upstream:src/components/campaign/create.js
         <label>Target Campaign:</label>
         <select>
           <option>Homocide</option>
           <option>Drug-related</option>
           <option>Burglary</option>
         </select>
+=======
+        <TargetedCrimesList { ...props } />
+>>>>>>> Stashed changes:src/components/campaign/new/index.js
       </li>
       <li>
         <label>Target Area(s)</label>
