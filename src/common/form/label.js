@@ -11,7 +11,7 @@ const defaultProps = {
 
 const Label = (props) => (
     <label>
-      { text }
+      { props.text }
     </label>
 );
 
