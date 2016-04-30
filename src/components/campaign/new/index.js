@@ -10,7 +10,7 @@ const CreateCampaign = (props) => (
         <CampaignName />
       </li>
       <li>
-        <TargetedCrimesList />
+        <TargetedCrimesList { ...props } />
       </li>
       <li>
         <TargetAreasList />
