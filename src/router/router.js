@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from '../app';
 import Main from '../components/main';
-import CreateCampaign from '../components/campaign/create';
+import CreateCampaign from '../components/campaign/new/';
 
 const AppRoutes = (
   <Route path="/" component={ App }>
