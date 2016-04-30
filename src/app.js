@@ -6,11 +6,6 @@ import Header from './components/header.js';
 import Footer from './components/footer.js';
 
 class App extends React.Component {
-  componentDidMount(){
-    const { dispatch } = this.props;
-    dispatch(attemptUserReload());
-  }
-
   render() {
     return (
       <div className="intervention">
@@ -22,14 +17,14 @@ class App extends React.Component {
   }
 }
 
-RJSTApp.contextTypes = {
+App.contextTypes = {
   router: React.PropTypes.object.isRequired
 };
 
-RJSTApp.propTypes = {
+App.propTypes = {
   dispatch: PropTypes.func.isRequired,
   children: PropTypes.object.isRequired
 };
 
 
-export default connect()(RJSTApp);
+export default connect()(App);
