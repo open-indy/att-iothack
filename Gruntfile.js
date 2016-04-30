@@ -115,10 +115,6 @@ module.exports = function (grunt) {
     'env:grunt'
   ]);
 
-  grunt.registerTask('teamcity', [
-    'env:grunt'
-  ]);
-
   grunt.registerTask('build', [
     'webpack:production',
     'copy:all',

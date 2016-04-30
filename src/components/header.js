@@ -14,7 +14,11 @@ class Header extends React.Component {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="top-nav-bar">
-              TOP NAV BAR
+              <Link to="/campaign/new">
+                <button className="create-campaign-link btn btn-link" type="button">
+                  Create Campaign
+                </button>
+              </Link>
             </div>
           </div>
         </div>
