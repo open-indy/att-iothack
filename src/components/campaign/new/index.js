@@ -1,19 +1,15 @@
 import React, { PropTypes } from 'react';
+import CampaignNameField from './name';
+import TargetedCrimesList from './targetedCrimes';
 
 const CreateCampaign = (props) => (
   <div>
     <ul>
       <li>
-        <label>Name:</label>
-        <input type="text" name="name" id="campaign-name" class="create-campaign" value="" />
+        <CampaignNameField />
       </li>
       <li>
-        <label>Target Campaign:</label>
-        <select>
-          <option>Homocide</option>
-          <option>Drug-related</option>
-          <option>Burglary</option>
-        </select>
+        <TargetedCrimesList />
       </li>
       <li>
         <label>Target Area(s)</label>
