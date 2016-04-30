@@ -10,7 +10,7 @@ const UNDEFINED = 'undefined';
 
 const defaults = {
 	headers: {
-		'X-CSRF-Token': typeof window !== UNDEFINED ? window.Mobile.csrfToken : '',
+		'X-CSRF-Token': '',
 		'Content-Type': 'application/json'
 	},
 	credentials: 'include'
