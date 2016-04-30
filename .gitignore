@@ -3,3 +3,7 @@ dist
 .tmp
 .sass-cache
 bower_components
+buildConfigs/dist.js
+buildConfigs/vendor.js
+*.log
+*.zip
