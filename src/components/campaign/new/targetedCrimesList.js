@@ -17,7 +17,7 @@ const crimes = [
   }
 ]
 
-const CampaignTargetedCrime = (props) => (
+const TargetedCrimesList = (props) => (
   <div>
     <Label text="Target Campaign:" />
     <SelectList
@@ -27,3 +27,5 @@ const CampaignTargetedCrime = (props) => (
     />
   </div>
 );
+
+export default TargetedCrimesList;
