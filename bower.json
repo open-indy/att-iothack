@@ -1,0 +1,23 @@
+{
+  "name": "Intervention 911",
+  "authors": [
+    "Jonathon Hibbard",
+    "Stephen Williams"
+  ],
+  "description": "information generated from crimes",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.4"
+  },
+  "devDependencies": {
+    "blanket": "~1.1.5",
+    "qunit": "~1.17.1"
+  }
+}

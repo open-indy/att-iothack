@@ -1,0 +1,28 @@
+#siteHeader {
+  height: auto;
+  overflow: hidden;
+  padding: 20px 20% 20px 20%;
+  background-color: @REACT-COLOR-DARK-GRAY;
+
+  .site-title {
+    float: left;
+
+    a.title {
+      margin-bottom: 0;
+      font-size: 28px;
+      padding-left: 0;
+      color: lighten(@REACT-COLOR-BLUE, 25%);
+      text-decoration: none;
+
+      &:hover {
+        color: @REACT-COLOR-BLUE;
+      }
+    }
+
+    p {
+      color: lighten(@REACT-COLOR-BLUE, 10%);
+    }
+  }
+}
+
+@import 'nav/top';
