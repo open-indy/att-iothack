@@ -78,5 +78,21 @@ app.get('/', csrfProtection, function(req, res) {
   });
 });
 
+var webpack = require('webpack');
+var webpackConfig = require('./buildconfigs/dev.config');
+var compiler = webpack(webpackConfig);
+
+app.use(require('webpack-dev-middleware')(compiler, {
+  noInfo: false,
+  publicPath: webpackConfig.output.publicPath,
+  stats: {
+    colors: true
+  }
+}));
+
+app.use(require("webpack-hot-middleware")(compiler, {
+  log: console.log, path: '/__webpack_hmr', heartbeat: 10 * 1000
+}));
+
 http.createServer(app).listen(app.get('port'));
-console.log('Express server listening on port %d', app.get('port'));
+console.log('Express DEV server listening on port %d with NODE_ENV=%s', app.get('port'), 'dev');
