@@ -15,7 +15,7 @@ const TextInput = (props) => (
     <input type="text" { ...props } />
 );
 
-Label.propTypes = propTypes;
-Label.defaultProps = defaultProps;
+TextInput.propTypes = propTypes;
+TextInput.defaultProps = defaultProps;
 
-export default Label;
+export default TextInput;
