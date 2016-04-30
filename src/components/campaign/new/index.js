@@ -1,34 +1,19 @@
 import React, { PropTypes } from 'react';
+import CampaignName from './name';
+import TargetedCrimesList from './targetedCrimesList';
+import TargetAreasList from './targetAreasList';
 
 const CreateCampaign = (props) => (
   <div>
     <ul>
       <li>
-        <label>Name:</label>
-        <input type="text" name="name" id="campaign-name" class="create-campaign" value="" />
+        <CampaignName />
       </li>
       <li>
-<<<<<<< Updated upstream:src/components/campaign/create.js
-        <label>Target Campaign:</label>
-        <select>
-          <option>Homocide</option>
-          <option>Drug-related</option>
-          <option>Burglary</option>
-        </select>
-=======
         <TargetedCrimesList { ...props } />
->>>>>>> Stashed changes:src/components/campaign/new/index.js
       </li>
       <li>
-        <label>Target Area(s)</label>
-        <ul>
-          <li>
-            <input type="checkbox" name="targetArea[]" value="Brownsburg" /> Brownsburg, IN
-          </li>
-          <li>
-            <input type="checkbox" name="targetArea[]" value="Downtown-Indianapolis" /> Indianapolis, IN (downtown)
-          </li>
-        </ul>
+        <TargetAreasList />
       </li>
       <li>
         <label>Control Area(s)</label>
@@ -58,7 +43,7 @@ const CreateCampaign = (props) => (
             <button>Add</button>
           </li>
         </ul>
-        Suggested Strategies for the Target Areas and Targeted Crime based on previous campaigns:
+        <p>Suggested Strategies for the Target Areas and Targeted Crime based on previous campaigns:</p>
         <ul>
           <li>No Data Available.</li>
         </ul>
