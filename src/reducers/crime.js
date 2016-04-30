@@ -19,7 +19,7 @@ const initialState = {
   ]
 };
 
-export default function crime(state = initialState, action) {
+export default function crime(state = initialState, action={ type: '' }) {
   switch(action.type) {
     case CRIMES_REQUEST:
       return {
@@ -36,6 +36,9 @@ export default function crime(state = initialState, action) {
           })
         )
       };
+
+    case 'FETCH_CRIMES':
+      return state;
 
     default:
       return state;

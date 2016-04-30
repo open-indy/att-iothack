@@ -10,13 +10,9 @@ const propTypes = {
 };
 
 class CreateCampaignContainer extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
-      <CreateCampaign { ...props } />
+      <CreateCampaign { ...this.props } />
     );
   }
 }
@@ -25,7 +21,20 @@ CreateCampaignContainer.propTypes = propTypes;
 
 const mapStateToProps = (state) => {
 	return {
-		crimes: state.crime.crimes
+		crimes: [
+      {
+        value: 'drug-related',
+        label: 'Drug-related'
+      },
+      {
+        value: 'burglary',
+        label: 'Burglary'
+      },
+      {
+        value: 'homocide',
+        label: 'Homocide'
+      }
+    ]
 	};
 };
 
