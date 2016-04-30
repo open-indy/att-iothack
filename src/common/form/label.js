@@ -10,9 +10,9 @@ const defaultProps = {
 };
 
 const Label = (props) => (
-    <label>
-      { props.text }
-    </label>
+  <label classNames={ props.classNames }>
+    { props.text }
+  </label>
 );
 
 Label.propTypes = propTypes;

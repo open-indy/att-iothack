@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
-import CampaignNameField from './name';
-import TargetedCrimesList from './targetedCrimes';
+import CampaignName from './name';
+import TargetedCrimesList from './targetedCrimesList';
 
 const CreateCampaign = (props) => (
   <div>
     <ul>
       <li>
-        <CampaignNameField />
+        <CampaignName />
       </li>
       <li>
         <TargetedCrimesList />

@@ -10,7 +10,9 @@ const SelectOptions = (props) => (
   <select name={ props.name }>
     {
       props.options.map(option => (
-        <option value={ option.value } selected={ !!option.selected } />
+        <option value={ option.value } selected={ option.value === props.defaultOption }>
+          { option.label }
+        </option>
       ))
     }
   </select>

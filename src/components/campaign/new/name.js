@@ -3,10 +3,10 @@ import Label from '../../../common/form/label';
 import TextInput from '../../../common/form/text';
 
 const CampaignNameField = (props) => (
-  <li>
+  <div>
     <Label text="Name:" />
     <TextInput name="campaign-name" value="" />
-  </li>
+  </div>
 );
 
 export default CampaignNameField;
